@@ -1,7 +1,7 @@
 #Scrivere un programma che simuli un gioco da tavolo con un numero di giocatori a scelta dell'utente (fra 2 e 6).
 #se il giocatore dopo aver tirato si trova su una casella che è un primo o appartiene alla serie di fibonacci può tirare di nuovo.
-# Il gioco ha un tabbellone con 50 caselle. 
-# A ogni turno un giocatore tira un dado a sei facce e fa tanti passi quanto il numero il primo che arriva vince.
+#Il gioco ha un tabbellone con 50 caselle. 
+#A ogni turno un giocatore tira un dado a sei facce e fa tanti passi quanto il numero il primo che arriva vince.
 #A ogni turno il codice deve printare un riassunto del turno (pos di ogni giocatore) e alla fine dire chi aha vinto e quanti turni è durato il gioco.
 
 import random
@@ -22,14 +22,24 @@ def posIniziali(players):
         pos_0.append(0)
     return pos_0
 
-def riassunto(players,turno):
+def max40(numero):
+    if numero >= 40:
+        return 40
+    else:
+        return numero
+    
+def riassunto(players,turno,pos):
     print(f"Turno: {turno}")
     for i in range(players):
+        pos[i] = max40(pos[i])
         print(f"Il giocatore {i} è nella casella {pos[i]}") 
     print("\n\n")
 
 def riassuntoFin(turno, vincitore):
-    print(f"Il gico è durato {turno} turni ed è stato vonto dal giocatore {vincitore}")
+    if len(vincitore) == 1:
+        print(f"Il gioco è durato {turno} turni ed è stato vinto dal giocatore {vincitore[0]}")
+    else:
+        print(f"Hanno vinto a parimerito i giocatori: {vincitore}")
 
 def is_prime(num):
     if num <=1:
@@ -60,7 +70,7 @@ while(True): #possibilità di fare più partite consecutive se l'utennbgte vuole
     pos = posIniziali(players)
     turno = 1
     vincita = False
-    vincitore = 0
+    vincitore = []
     fib_100 = fibbonacci(100) #primi 100 val della seq di fibbonacci
     
     while not vincita:
@@ -70,8 +80,8 @@ while(True): #possibilità di fare più partite consecutive se l'utennbgte vuole
                 pos[i] += dado()  
             if pos[i] >= 40:
                 vincita = True
-                vincitore = i
-        riassunto(players, turno)
+                vincitore.append(i)
+        riassunto(players, turno, pos)
         if vincita:
             riassuntoFin(turno, vincitore)
         else:    
