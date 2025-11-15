@@ -16,7 +16,6 @@ def decoratore_con_argomenti(funzione):
         print("prima")
         risultato = funzione(*args, **kwargs) 
         print("dopo")
-        print(a-b)
         return risultato
     return wrapper
     

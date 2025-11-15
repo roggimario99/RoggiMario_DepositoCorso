@@ -7,7 +7,7 @@
 import random
 
 
-def dado():                  #dado a sei facce
+def dado():                       #dado a sei facce
     return random.randint(1,6)
 
 def numPlayers():                 #funz. che richiede in inmput il numero di giocatori
@@ -37,9 +37,12 @@ def riassunto(players,turno,pos):
 
 def riassuntoFin(turno, vincitore):
     if len(vincitore) == 1:
-        print(f"Il gioco è durato {turno} turni ed è stato vinto dal giocatore {vincitore[0]}")
+        print(f"Il gioco è durato {turno} turni ed è stato vinto dal giocatore {vincitore[0]}.")
     else:
-        print(f"Hanno vinto a parimerito i giocatori: {vincitore}")
+        print(f"Hanno vinto a parimerito i giocatori: ", end="")
+        for v in vincitore[:-1]:
+            print(f"{v}, ", end="")
+        print(f"e {vincitore[-1]}.", end = "\n\n")
 
 def is_prime(num):
     if num <=1:
@@ -95,3 +98,5 @@ while(True): #possibilità di fare più partite consecutive se l'utennbgte vuole
         continue
     else:
         print("ERRORE! Risposta non valida.")
+        break
+        
