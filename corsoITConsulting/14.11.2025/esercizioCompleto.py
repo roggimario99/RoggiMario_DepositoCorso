@@ -2,7 +2,6 @@ def is_prime(num):
     if num <=1:
         return False
 
-    
     for j in range(2,int(num**0.5) + 1): #verifico per tutti i num maggiori di 1 che non abbiano divisori diversi da 1 e se stessi. 
         if num % j == 0:                 #j rappresenta i possibili divisori.
             return False                 #se trovo un divisore mi fermo e returno False

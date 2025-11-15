@@ -16,26 +16,22 @@ def numPlayers():                 #funz. che richiede in inmput il numero di gio
         num = int(input("Quanti giocatori vuoi? (fra 2 e 6): "))
     return num
 
-def posIniziali(players):
-    pos_0 = []
-    for i in range(players):
-        pos_0.append(0)
-    return pos_0
-
-def max40(numero):
-    if numero >= 40:
-        return 40
-    else:
-        return numero
+def posIniziali(players):         #inizializza le pos. iniziali
     
-def riassunto(players,turno,pos):
+    return   [0] * players
+
+def max40(numero):                #arrotonda a 40 numeri > di 40 (Il tabellone a massimo 40 caselle)
+    return min(numero, 40)
+
+    
+def riassunto(players,turno,pos):         #stampa riassunto turno
     print(f"Turno: {turno}")
     for i in range(players):
         pos[i] = max40(pos[i])
         print(f"Il giocatore {i} è nella casella {pos[i]}") 
     print("\n\n")
 
-def riassuntoFin(turno, vincitore):
+def riassuntoFin(turno, vincitore):       #stampa riassunto finale
     if len(vincitore) == 1:
         print(f"Il gioco è durato {turno} turni ed è stato vinto dal giocatore {vincitore[0]}.")
     else:
@@ -64,39 +60,46 @@ def fibbonacci(N, a = 1, b = 1):
         
     return n_in_seq                                 #returno la sequenza
 
+if __name__ == "__main__":
 
-##inizio gioco
-while(True): #possibilità di fare più partite consecutive se l'utennbgte vuole
- 
-    ## partita
-    players = numPlayers()
-    pos = posIniziali(players)
-    turno = 1
-    vincita = False
-    vincitore = []
-    fib_100 = fibbonacci(100) #primi 100 val della seq di fibbonacci
+    ##inizio gioco
+    while(True): #possibilità di fare più partite consecutive se l'utente vuole
     
-    while not vincita:
-        for i in range(players):
-            pos[i] += dado()
-            if pos[i] in fib_100 or is_prime (pos[i] ):  
-                pos[i] += dado()  
-            if pos[i] >= 40:
-                vincita = True
-                vincitore.append(i)
-        riassunto(players, turno, pos)
-        if vincita:
-            riassuntoFin(turno, vincitore)
-        else:    
-            turno += 1
-        pass
+        ## partita
+        players = numPlayers()
+        pos = posIniziali(players)
+        risDado = posIniziali(players)
+        turno = 1
+        vincita = False
+        vincitore = []
+        fib_100 = fibbonacci(100) #primi 100 val della seq di fibbonacci
         
-    rep = input("Vuoi ripetere? (si/no): ")
-    if rep == "no":
-        break
-    elif rep == "si":
-        continue
-    else:
-        print("ERRORE! Risposta non valida.")
-        break
+        while not vincita:
+            for i in range(players):
+                pos[i] += dado()
+                
+                if pos[i] in fib_100 or is_prime (pos[i] ): #controllo per eventuale tiro extra 
+                    pos[i] += dado()  
+                    
+                if pos[i] >= 40:            #controllo vincita
+                    vincita = True
+                    vincitore.append(i)
+                    
+            riassunto(players, turno, pos)  #riassunto turno
+            
+            if vincita:          
+                riassuntoFin(turno, vincitore)  #riassunto finale
+            else:    
+                turno += 1
         
+        while True:  #chiede all'utente se vuole ripetere il gioco. 
+            scelta = input("Vuoi giocare di nuovo? (si/no): ").strip().lower()
+            if scelta in ("si", "no"):   #ripete se la risposta non è valida
+                break
+            print("Risposta non valida. Scrivi 'si' o 'no'.")
+
+        if scelta == "no":
+            break
+                
+        
+            
