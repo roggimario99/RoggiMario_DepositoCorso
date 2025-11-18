@@ -30,7 +30,7 @@ class Giocatore(Membro_squadra):
     def svolge_lavoro(self):
         print(f"{self.nome} sta giocando.")
         
-    gioca_partita = svolge_lavoro()    
+    gioca_partita = svolge_lavoro  
     
 class Allenatore(Membro_squadra):
     def __init__(self, nome, eta, anni_esperienza):

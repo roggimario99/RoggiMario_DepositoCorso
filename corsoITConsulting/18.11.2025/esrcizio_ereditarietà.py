@@ -16,7 +16,7 @@ class Animale:
 class Giraffa(Animale):
     
     def __init__(self, nome, eta, lungCollo):
-        Animale.__init__(self, nome, eta) #super().__init__(self, nome, eta)
+        Animale.__init__(self, nome, eta) #super().__init__(nome, eta)
         self.lungCollo = lungCollo
     
     def __str__(self):
