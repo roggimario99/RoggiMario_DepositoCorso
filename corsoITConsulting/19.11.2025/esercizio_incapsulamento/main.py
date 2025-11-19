@@ -23,7 +23,7 @@ while not res:
     
     
 while True:  #chiede all'utente se vuole ripetere le operazioni.
-    azione = input("Che operazione vuoi fare oggi? \n (deposita: 1, preleva: 2, visualizza saldo: 3)\n Inserire numero: ")
+    azione = input("Che operazione vuoi fare oggi? \n (deposita: 1, preleva: 2, visualizza saldo: 3, esci: 4)\n Inserire numero: ")
     
     match azione:
         case "1":
@@ -36,6 +36,12 @@ while True:  #chiede all'utente se vuole ripetere le operazioni.
             
         case "3":
             conto.visualizza_saldo()
+            
+        case "4":
+            break
+        
+        case _:
+            print("Operazione non valida!")
     
     
     
