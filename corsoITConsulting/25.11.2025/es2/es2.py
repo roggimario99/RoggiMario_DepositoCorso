@@ -12,6 +12,7 @@ def scrivi_dati(nome_file, dati, mode="w"):
     """Scrivi i dati in modo leggibile utilizzando numpy.savetxt."""
     with open(nome_file, mode) as file:
         file.write(" ".join(map(str, dati)) + "\n")  # stampo l'array trasformato in stringa. Map fa un array di stringhe. join le unisce.
+         #alternativa np.array2string
 
 N_files = 1
 
@@ -42,7 +43,7 @@ while True:
             arr_sum = genera_dati()
             nome = f"I_miei_dati_{N_files}.txt"
             scrivi_dati(nome, arr_sum, mode="w")
-            N_files += 1
+            N_files += 1 # incrementa numero file!
 
         case "4":
             break
