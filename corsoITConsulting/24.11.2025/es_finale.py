@@ -30,7 +30,7 @@ i = [0, 3, 7, 12, 25, 33, 48]
 
 print("elementi in posizioni scelte: ", myArrFloat[i])
 
-print("elementi pari: ", myArrFloat[ myArrFloat % 2 == 0])
+print("elementi pari: ", myArrFloat[ myArrFloat % 2 == 0])  #maschera booleana
 
 media = np.mean(myArrFloat)
-print("elementi maggiore della media: ", myArrFloat[ myArrFloat > media])
+print("elementi maggiore della media: ", myArrFloat[ myArrFloat > media]) #maschera booleana

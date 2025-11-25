@@ -11,8 +11,9 @@ arr_float = arr.astype(float)
 print("array con decimali fra 10 e 49: ", arr_float)
 print("tipo: ", arr_float.dtype)
 
-##
+## stampa della shape + reshaping
 print("shape: ", arr.shape)
+
 arr_reshaped = arr.reshape((10,4))
 print("shape: ", arr_reshaped.shape)
 print("array con forma (10,4), 10 righe x 4 colonne: ", arr_reshaped)

@@ -3,7 +3,7 @@ import numpy as np
 a = 10
 b = 50
 size = 20
-arr = np.random.randint(a, b + 1, size)  #array di un num size di interi random fra a e b
+arr = np.random.randint(a, b + 1, size )  #array di un num size di interi random fra a e b
 
 print(arr)
 print("Primi 10 elementi: ",arr[:10])
