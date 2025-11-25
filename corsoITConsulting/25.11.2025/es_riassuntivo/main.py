@@ -29,7 +29,7 @@ while True:
     print("3. Somma elementi")
     print("4. Media elementi")
     print("5. prodotto per una nuov matrice.")
-    print("6. prodotto per una nuov matrice.")
+    print("6. determinante.")
     print("7. Esci.")
 
     scelta = input("Cosa vuoi fare? ")
