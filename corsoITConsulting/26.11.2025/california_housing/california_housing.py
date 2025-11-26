@@ -69,7 +69,7 @@ with open("results.txt", "w") as file:
 #salva in db
 #---------------------------------
 
-DB_NAME = "results"
+DB_NAME = "results.db"
 
 def crea_db_risultati():
     print("\n--- Inizio Importazione CSV -> SQLite ---")
