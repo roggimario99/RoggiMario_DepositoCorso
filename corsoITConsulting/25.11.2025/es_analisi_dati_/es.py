@@ -5,7 +5,9 @@ arr = np.loadtxt("dati1d_random.txt")
 file = open("results.txt","w")
 file.close
 
+#---------------------------------------------
 #indicatori statistici
+#---------------------------------------------
 
 def stat_analysys(arr, print_file = True):
     min_val = np.min(arr)
@@ -25,6 +27,7 @@ def stat_analysys(arr, print_file = True):
             file.write(f"mean: {mean}\n")
             file.write(f"standard deviation: {std}\n")
             file.write("\n")
+            
 #analisi posizionali
 
 
