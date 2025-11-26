@@ -14,7 +14,7 @@ print(f"riga_2: ",riga_2)
 print(f"riga_3: ",riga_3)
 print(f"col_4: ",col_4)
 
-diag = np.diagonal(mat, -1)
+diag = np.diagonal(mat, 0) #diagonale principale, cambiando lo 0 si può estrarre un altra diagonale
 
 print(f"diagonale: ",diag)
 
