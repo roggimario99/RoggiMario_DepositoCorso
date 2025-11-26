@@ -2,7 +2,18 @@ import numpy as np
 
 #arr = np.loadtxt("dati1d_random.txt")
 
+#----------------------------------------------
+#load dei dati
+#----------------------------------------------
 
+def data_load(nome_file):
+    if nome_file.split(".")[-1] == "txt":
+        data =np.loadtxt(nome_file)
+        
+    if nome_file.split(".")[-1] == "csv":
+        data =np.loadtxt(nome_file, delimiter=",")
+        
+    return data
 
 #---------------------------------------------
 #indicatori statistici
@@ -36,7 +47,7 @@ def stat_analysys(arr, print_file = True):
 def pos_analysys(arr, print_file = True):
     dim = len(arr.shape)
     
-    ind_val_min = np.argmin(arr, axis = dim -1)
+    ind_val_min = np.argmin(arr, axis = dim -1)    #se l'array è bidimensionale esegue l'operzione riga per riga
     ind_val_max = np.argmax(arr, axis = dim -1)
     mediana = np.percentile(arr, 50, axis = dim -1)
 
@@ -119,5 +130,3 @@ def matrix_analysys(mat, mat2, print_file = True):
             file.write("\n")
 
            
-"""by_axis_analysys(mat)
-matrix_analysys(mat, mat.T)"""

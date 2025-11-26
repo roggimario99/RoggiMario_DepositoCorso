@@ -6,17 +6,20 @@ file.close
 
 dic = {"si": True, "no": False}
 
-file_1d = "dati1d_random.txt" 
-file_2d = "dati2d_random.txt" 
 
-arr = np.loadtxt("dati1d_random.txt")
-mat = np.loadtxt("dati2d_random.txt")
+#----------------------------------------------
+#load dei dati
+#----------------------------------------------
+
+nome_file = input("inserisci il nome del file: ")
+data = data_load(nome_file)
 
 while True:
-    nome_file = input("inserisci il nome del file: ")
-    if nome_file.split(".")[-1] == "txt":
-        data =np.load(nome_file)
-        
+    
+
+    #----------------------------------------------
+    #MENU
+    #----------------------------------------------
     
     print("### MENU' ###")
     print("1. Analisi statistiche di base (1D).")
@@ -36,16 +39,18 @@ while True:
 
     match scelta:
         case "1":
-            stat_analysys(mat)
+            stat_analysys(data)
             
         case "2":
-            pos_analysys(mat)
+            pos_analysys(data)
             
         case "3":
-            by_axis_analysys(arr)
+            by_axis_analysys(data)
             
         case "4":
-            matrix_analysys(mat, mat.T)
+            nome_file = input("inserisci il nome del file da cui importare la matrice con cui fare il prodotto: ")
+            data_bis = data_load(nome_file)
+            matrix_analysys(data, data_bis)
                 
         case "0":
             break
