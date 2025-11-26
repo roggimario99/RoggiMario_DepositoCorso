@@ -118,7 +118,7 @@ def crea_db_risultati():
     cursor.executemany(sql, risultati)
 
     conn.commit()
-    print(f"Importati con successo {cursor.rowcount} houses blokcs.")
+    print(f"Importati con successo {cursor.rowcount} statistiche.")
 
     conn.close()
 
