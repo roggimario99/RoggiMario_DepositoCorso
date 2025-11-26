@@ -83,7 +83,7 @@ def crea_db_risultati():
     cursor.execute("""
     CREATE TABLE IF NOT EXISTS results (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
-        quantity TEXT NOT NULL
+        quantity TEXT NOT NULL,
         min_val  REAL,
         max_val  REAL,   
         mean     REAL,
@@ -94,33 +94,34 @@ def crea_db_risultati():
         
     );
     """)
-quantity = ['MedInc', 'HouseAge', 'AveRooms', 'AveBedrms', 'Population', 'AveOccup', 'Latitude', 'Longitude', 'MedHouseVal']
-risultati = []
-
-for q in quantity:
-    risultati.append([q])
-
-risultati[0] += min_val.tolist()
-risultati[1] += max_val.tolist()
-risultati[2] += mean.tolist()
-risultati[3] += std.tolist()
-risultati[4] += ind_val_min.tolist()
-risultati[5] += ind_val_max.tolist()
-risultati[6] += mediana.tolist()
-
     
-
-# 4. Inserimento di massa (LOAD)
-# Usiamo executemany per la massima velocità
-sql = """INSERT INTO results (min_val, max_val, mean, std, ind_val_min, 
-        ind_val_max,mediana) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)"""
-cursor.executemany(sql, dati_da_inserire)
-
-conn.commit()
-print(f"Importati con successo {cursor.rowcount} houses blokcs.")
-
-conn.close()
+    quantity = ['MedInc', 'HouseAge', 'AveRooms', 'AveBedrms', 'Population', 'AveOccup', 'Latitude', 'Longitude', 'MedHouseVal']
+    risultati = []
+    risultati.append(quantity)
 
 
+
+    risultati.append(min_val.tolist())
+    risultati.append(max_val.tolist())
+    risultati.append(mean.tolist())
+    risultati.append(std.tolist())
+    risultati.append(ind_val_min.tolist())
+    risultati.append(ind_val_max.tolist())
+    risultati.append(mediana.tolist())
+
+    risultati = np.array(risultati).T.tolist()
+    
+    # 4. Inserimento di massa (LOAD)
+    # Usiamo executemany per la massima velocità
+    sql = """INSERT INTO results (quantity, min_val, max_val, mean, std, ind_val_min, 
+            ind_val_max, mediana) VALUES (?, ?, ?, ?, ?, ?, ?, ?)"""
+    cursor.executemany(sql, risultati)
+
+    conn.commit()
+    print(f"Importati con successo {cursor.rowcount} houses blokcs.")
+
+    conn.close()
+
+crea_db_risultati()
 
 
