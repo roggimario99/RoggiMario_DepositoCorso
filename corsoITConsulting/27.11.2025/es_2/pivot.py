@@ -21,7 +21,7 @@ df = pd.DataFrame(data)
 
 # Creazione della tabella pivot
 
-pivot_df = df.pivot_table(values='Vendite', index='Prodotto', columns='Città', aggfunc='sum')
+pivot_df = df.pivot_table(values='Vendite', index='Prodotto', columns='Città', aggfunc='mean')
 
 
 print(pivot_df)
