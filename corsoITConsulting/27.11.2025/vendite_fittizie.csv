@@ -1,0 +1,201 @@
+,Data,Città,Vendite,Prodotto
+0,8-11-2025,Milano,741,cellulare
+1,15-11-2025,Milano,499,penna
+2,2-11-2025,Milano,138,computer
+3,10-11-2025,Milano,248,penna
+4,19-11-2025,Milano,371,penna
+5,5-11-2025,Milano,364,penna
+6,19-11-2025,Roma,777,penna
+7,11-11-2025,Milano,895,computer
+8,18-11-2025,Milano,906,computer
+9,29-11-2025,Milano,810,computer
+10,9-11-2025,Milano,232,penna
+11,16-11-2025,Milano,706,computer
+12,5-11-2025,Roma,335,cellulare
+13,5-11-2025,Milano,348,cellulare
+14,19-11-2025,Cava De' Tirreni,253,computer
+15,30-11-2025,Roma,856,computer
+16,30-11-2025,Milano,445,penna
+17,14-11-2025,Roma,558,computer
+18,12-11-2025,Roma,782,penna
+19,3-11-2025,Cava De' Tirreni,464,computer
+20,6-11-2025,Milano,431,cellulare
+21,9-11-2025,Milano,507,cellulare
+22,30-11-2025,Milano,857,cellulare
+23,4-11-2025,Milano,895,cellulare
+24,6-11-2025,Roma,897,cellulare
+25,22-11-2025,Milano,480,computer
+26,5-11-2025,Roma,916,penna
+27,18-11-2025,Milano,307,cellulare
+28,19-11-2025,Cava De' Tirreni,214,penna
+29,19-11-2025,Roma,973,penna
+30,17-11-2025,Milano,520,cellulare
+31,1-11-2025,Cava De' Tirreni,924,penna
+32,9-11-2025,Roma,400,penna
+33,24-11-2025,Roma,151,computer
+34,11-11-2025,Milano,965,cellulare
+35,21-11-2025,Milano,390,computer
+36,12-11-2025,Roma,949,penna
+37,7-11-2025,Milano,681,penna
+38,10-11-2025,Cava De' Tirreni,605,cellulare
+39,8-11-2025,Roma,731,cellulare
+40,12-11-2025,Milano,112,penna
+41,5-11-2025,Milano,388,computer
+42,28-11-2025,Milano,760,penna
+43,12-11-2025,Roma,329,cellulare
+44,25-11-2025,Roma,992,cellulare
+45,24-11-2025,Roma,540,penna
+46,17-11-2025,Milano,151,cellulare
+47,20-11-2025,Milano,964,computer
+48,9-11-2025,Milano,184,penna
+49,21-11-2025,Milano,930,cellulare
+50,29-11-2025,Milano,966,penna
+51,3-11-2025,Milano,482,cellulare
+52,21-11-2025,Cava De' Tirreni,641,penna
+53,29-11-2025,Milano,719,computer
+54,5-11-2025,Roma,980,cellulare
+55,16-11-2025,Roma,249,cellulare
+56,29-11-2025,Cava De' Tirreni,289,computer
+57,28-11-2025,Milano,542,cellulare
+58,19-11-2025,Milano,892,penna
+59,27-11-2025,Roma,617,penna
+60,13-11-2025,Roma,832,cellulare
+61,8-11-2025,Cava De' Tirreni,940,penna
+62,9-11-2025,Roma,634,computer
+63,11-11-2025,Roma,361,computer
+64,14-11-2025,Roma,657,penna
+65,15-11-2025,Roma,225,cellulare
+66,9-11-2025,Roma,500,penna
+67,21-11-2025,Roma,706,computer
+68,19-11-2025,Cava De' Tirreni,376,computer
+69,21-11-2025,Roma,158,penna
+70,2-11-2025,Milano,568,penna
+71,16-11-2025,Milano,535,penna
+72,19-11-2025,Roma,706,penna
+73,25-11-2025,Roma,877,penna
+74,1-11-2025,Milano,666,penna
+75,25-11-2025,Milano,640,penna
+76,22-11-2025,Milano,712,penna
+77,13-11-2025,Milano,646,computer
+78,18-11-2025,Milano,279,cellulare
+79,17-11-2025,Milano,985,cellulare
+80,17-11-2025,Cava De' Tirreni,360,penna
+81,6-11-2025,Milano,852,penna
+82,21-11-2025,Milano,390,cellulare
+83,9-11-2025,Cava De' Tirreni,328,cellulare
+84,30-11-2025,Milano,472,penna
+85,11-11-2025,Milano,254,penna
+86,6-11-2025,Roma,872,computer
+87,20-11-2025,Milano,293,cellulare
+88,23-11-2025,Milano,908,cellulare
+89,19-11-2025,Milano,439,penna
+90,21-11-2025,Milano,295,computer
+91,12-11-2025,Cava De' Tirreni,945,computer
+92,22-11-2025,Milano,908,penna
+93,6-11-2025,Milano,279,penna
+94,15-11-2025,Roma,466,cellulare
+95,23-11-2025,Roma,267,penna
+96,10-11-2025,Milano,807,cellulare
+97,10-11-2025,Milano,513,cellulare
+98,25-11-2025,Roma,624,cellulare
+99,27-11-2025,Roma,612,penna
+100,12-11-2025,Milano,442,cellulare
+101,29-11-2025,Milano,761,cellulare
+102,1-11-2025,Roma,427,cellulare
+103,13-11-2025,Milano,685,penna
+104,5-11-2025,Milano,206,cellulare
+105,13-11-2025,Milano,199,penna
+106,4-11-2025,Milano,753,computer
+107,26-11-2025,Milano,806,penna
+108,2-11-2025,Roma,891,penna
+109,25-11-2025,Milano,804,cellulare
+110,22-11-2025,Roma,631,cellulare
+111,2-11-2025,Milano,279,penna
+112,5-11-2025,Roma,477,penna
+113,28-11-2025,Roma,412,cellulare
+114,15-11-2025,Milano,615,penna
+115,12-11-2025,Milano,577,cellulare
+116,27-11-2025,Milano,125,cellulare
+117,5-11-2025,Roma,387,computer
+118,22-11-2025,Milano,255,penna
+119,25-11-2025,Milano,410,computer
+120,21-11-2025,Cava De' Tirreni,878,penna
+121,30-11-2025,Roma,476,penna
+122,7-11-2025,Roma,275,cellulare
+123,30-11-2025,Milano,350,cellulare
+124,13-11-2025,Cava De' Tirreni,735,cellulare
+125,20-11-2025,Milano,568,penna
+126,30-11-2025,Milano,393,penna
+127,6-11-2025,Milano,699,penna
+128,7-11-2025,Milano,365,penna
+129,12-11-2025,Cava De' Tirreni,847,penna
+130,20-11-2025,Cava De' Tirreni,947,cellulare
+131,22-11-2025,Milano,707,cellulare
+132,5-11-2025,Cava De' Tirreni,983,cellulare
+133,12-11-2025,Cava De' Tirreni,951,penna
+134,9-11-2025,Roma,797,penna
+135,11-11-2025,Cava De' Tirreni,968,cellulare
+136,14-11-2025,Roma,918,penna
+137,9-11-2025,Milano,248,penna
+138,10-11-2025,Cava De' Tirreni,725,penna
+139,27-11-2025,Cava De' Tirreni,865,penna
+140,16-11-2025,Roma,130,penna
+141,15-11-2025,Cava De' Tirreni,448,penna
+142,9-11-2025,Roma,829,penna
+143,19-11-2025,Milano,641,cellulare
+144,7-11-2025,Milano,930,penna
+145,23-11-2025,Milano,592,penna
+146,27-11-2025,Roma,789,penna
+147,21-11-2025,Milano,813,computer
+148,3-11-2025,Roma,304,penna
+149,12-11-2025,Milano,767,computer
+150,14-11-2025,Milano,178,penna
+151,5-11-2025,Milano,511,computer
+152,24-11-2025,Milano,768,penna
+153,18-11-2025,Roma,809,penna
+154,18-11-2025,Roma,771,computer
+155,28-11-2025,Milano,261,cellulare
+156,11-11-2025,Milano,312,penna
+157,21-11-2025,Milano,127,computer
+158,8-11-2025,Milano,493,penna
+159,5-11-2025,Roma,398,cellulare
+160,3-11-2025,Cava De' Tirreni,315,cellulare
+161,3-11-2025,Cava De' Tirreni,889,penna
+162,7-11-2025,Roma,185,penna
+163,5-11-2025,Cava De' Tirreni,434,computer
+164,29-11-2025,Cava De' Tirreni,392,penna
+165,13-11-2025,Cava De' Tirreni,568,penna
+166,5-11-2025,Milano,866,penna
+167,19-11-2025,Roma,488,penna
+168,11-11-2025,Roma,959,cellulare
+169,8-11-2025,Cava De' Tirreni,138,penna
+170,16-11-2025,Roma,871,computer
+171,24-11-2025,Roma,415,cellulare
+172,13-11-2025,Milano,470,computer
+173,20-11-2025,Milano,267,cellulare
+174,16-11-2025,Cava De' Tirreni,193,penna
+175,8-11-2025,Milano,441,penna
+176,4-11-2025,Roma,888,computer
+177,9-11-2025,Roma,325,computer
+178,16-11-2025,Roma,323,penna
+179,28-11-2025,Milano,569,penna
+180,5-11-2025,Milano,853,cellulare
+181,23-11-2025,Roma,944,penna
+182,9-11-2025,Cava De' Tirreni,743,penna
+183,21-11-2025,Milano,157,penna
+184,5-11-2025,Roma,929,penna
+185,21-11-2025,Cava De' Tirreni,268,cellulare
+186,9-11-2025,Roma,415,cellulare
+187,9-11-2025,Cava De' Tirreni,379,penna
+188,21-11-2025,Roma,791,computer
+189,1-11-2025,Roma,751,cellulare
+190,14-11-2025,Milano,656,computer
+191,16-11-2025,Roma,693,penna
+192,10-11-2025,Cava De' Tirreni,485,computer
+193,29-11-2025,Milano,563,computer
+194,1-11-2025,Cava De' Tirreni,357,penna
+195,2-11-2025,Roma,159,penna
+196,25-11-2025,Milano,942,computer
+197,20-11-2025,Cava De' Tirreni,470,computer
+198,12-11-2025,Milano,585,computer
+199,21-11-2025,Milano,611,penna
